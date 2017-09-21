@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo">
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Arvo">
+
+ </head>
+
+<p id="notice"><%= notice %></p>
+
+<p style="color:#a83301; font-family: 'Archivo Narrow', sans-serif; font-size: 25px; line-height: 30px;">
+  <%= @book.title %><br />
+    by <%= @book.author %>
+</p>
+
+
+
+<p>
+  <strong>Official Publisher Synopsis:</strong>
+  <%= @book.synopsis %>
+</p>
+
+<p>
+  <strong>Official Publisher URL:</strong>
+  <%= @book.url %>
+</p>
+
+
+<div class="btn"><%= link_to 'Edit', edit_book_path(@book) %> </div>
+<div><br /></div>
+<div class="btn"><%= link_to 'Back', books_path %></div>
+
+</html>
