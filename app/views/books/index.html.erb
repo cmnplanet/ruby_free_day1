@@ -6,15 +6,24 @@
 
  </head>
 
+
+
 <div>
+
+
 
 <p id="notice"><%= notice %></p>
 
 <h1 style="color:#a83301; font-family: 'Arvo', serif; font-size: 36px;">An Iron Yard Gallery of Books</h1>
 
+  <div style="text-align:right; color:#d8d8d8;"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete%>  •  <%= link_to 'New Book', new_book_path %></div>
+<div>
+  <br />
+</div>
+
 <table style="border-color:black; border-style: solid; border-radius: 6px; border-width: 1px; padding: 0px 30px 30px 30px; background-color:#f9fcf2;">
   <tbody>
-    <% @books.each do |book| %>
+    <% @book.each do |book| %>
       <tr>
         <td style="color:#a83301; font-family: 'Archivo Narrow', sans-serif; font-size: 30px; line-height: 35px;"><br /><%= book.title %></td>
       </tr>
@@ -62,8 +71,8 @@
 
 
 
-<div class="btn">
+<!-- <div class="btn">
 <%= link_to 'New Book', new_book_path %>
-</div>
+</div> -->
 
 </html>
