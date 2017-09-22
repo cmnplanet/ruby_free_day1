@@ -52,9 +52,9 @@
   <tbody>
 
 <tr>
-  <td class="btn"><%= link_to 'Show', book %></td>
+  <td class="btn"><%= link_to 'Show Publisher Info', book %></td>
   <td class="btn"><%= link_to 'Edit', edit_book_path(book) %></td>
-  <td class="btn"><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Do you want to burn this book?' } %></td>
+  <td class="btn"><%= link_to 'Burn', book, method: :delete, data: { confirm: 'Do you want to burn this book?' } %></td>
 </tr>
     <% end %>
   </tbody>

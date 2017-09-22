@@ -55,6 +55,7 @@ class BooksController < ApplicationController
   # DELETE /books/1
   # DELETE /books/1.json
   def destroy
+    @book = Book.find(params[:id])
     if @book.destroy
       redirect_to books_path
     else
